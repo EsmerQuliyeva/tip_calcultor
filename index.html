@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tip_calculator">
+            <h3>Tip Calculator</h3>
+            <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
+                <label for="amount">Bill Amount</label><br>
+                <button><i class="ri-money-dollar-box-line"></i></button><input type="number" id="bill_input"><br><br>
+            <label for="guest">Number of Guests</label><br>
+            <button><i class="ri-user-fill"></i></button><input type="number" id="number_input">
+            <label for="quality" style="font-size: 20px;">Service Quality</label><br><br>
+            <select id="select">
+            <option disable selected value="0">Choose...</option>
+            <option value="0.3">30%- It is outstanding</option>
+            <option value="0.2">20%-Good</option>
+            <option value="0.15">15% - It is okay</option>
+            <option value="0.1">10%-Bad</option>
+            <option value="0.05">5%-Terrible</option>
+        </select><br><br>
+        <div style="text-align: center;">
+            <p style="border-top: 2px solid rgba(211, 211, 211, 0.5);"></p>
+            <button onclick="calculate_tip()" style="border-radius:5px; width: fit-content;">Calculate</button>
+        </div>
+        </div>
+        <div id="message"> </div>
+    </div>
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
